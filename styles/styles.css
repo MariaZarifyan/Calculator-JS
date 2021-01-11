@@ -1,0 +1,104 @@
+html {
+    background-color:  rgba(151,171,219,1) ;
+    background-image:  -webkit-linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(168, 168, 168) 100%, rgba(0,0,0,0) 100%);
+    background-attachment: fixed;
+}
+
+body {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    transition: background-color .3s;
+}
+
+
+h1{
+    font-size: 30px;
+    /* padding: 10px; */
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 45px auto;
+    border-radius: 12px;
+    box-shadow: 10px 7px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-display {
+    color: #fff;
+    
+    background-color: #14131a;
+    text-align: right;
+    padding: 2px 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+form {
+    max-width: 100%;
+}
+
+input {
+    background-color: #14131a;
+    width: 98%;
+    font-size: 40px;
+    outline: none;
+    height: 80px;
+    border: none;
+    text-align: right;
+    color: #fff
+}
+
+.calculator-keyboard {
+    background: #000000;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 0 0 12px rgba(41, 41, 41, 0.7) inset;
+  }
+
+.equal {
+    grid-column: 3 / span 2;
+    background-color: rgb(5, 121, 11);
+    color:#fff
+}
+
+.equal:hover {
+   
+    background-color: rgb(83, 165, 87);
+}
+
+.erase {
+    background-color: rgb(117, 28, 28);
+    color:#fff
+}
+
+.erase:hover {
+    background-color: rgb(168, 58, 58);
+}
+
+.operator-button{
+    background-color: rgb(168, 168, 168);
+}

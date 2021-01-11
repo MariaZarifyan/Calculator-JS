@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet"/>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <h1> A calculator </h1>
+        <div class="calculator">
+            <div class="calculator-display">
+                <form name="form">
+                    <input type="text" name="textview" readonly>
+                </form>
+            </div>
+            <div class="calculator-keyboard">
+                <button class="operator-button" onclick="back()">&larr;</button>
+                <button class="operator-button">+/-</button>
+                <button class="operator-button" onclick="display('.')">.</button>
+                <button class="operator-button" onclick="display('/')">÷</button>
+                <button class="number" onclick="display('7')">7</button>
+                <button class="number" onclick="display('8')">8</button>
+                <button class="number" onclick="display('9')">9</button>
+                <button class="operator-button" onclick="display('*')">&times;</button>
+                <button class="number" onclick="display('4')">4</button>
+                <button class="number" onclick="display('5')">5</button>
+                <button class="number" onclick="display('6')">6</button>
+                <button class="operator-button" value="+" onclick="display('+')">+</button>
+                <button class="number" onclick="display('1')">1</button>
+                <button class="number" onclick="display('2')">2</button>
+                <button class="number" onclick="display('3')">3</button>
+                <button class="operator-button" onclick="display('-')">-</button>
+                <button class="number" onclick="display('0')">0</button>
+                <button class="erase" onclick="cleanScreen()">AC</button>
+                <button class="equal" onclick="result()">=</button>
+            </div>
+        </div>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
